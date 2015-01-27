@@ -1,5 +1,5 @@
 package com.nespresso.recruitment.gossip;
 
 public enum PersonType {
-	Mr, Dr;
+	Mr, Dr, Agent, Pr;
 }

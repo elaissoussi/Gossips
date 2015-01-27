@@ -41,6 +41,7 @@ public class Gossips {
 	}
 
 	public void spread() {
+		
 		List<Person> gossipsPersonWhoAreOccuped = new ArrayList<Person>();
 		for (Person currentPerson : personsGossip.values()) {
 			Person personGossip = currentPerson.hear(gossipsPersonWhoAreOccuped);

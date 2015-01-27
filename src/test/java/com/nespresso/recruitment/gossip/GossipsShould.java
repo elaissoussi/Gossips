@@ -86,7 +86,7 @@ public class GossipsShould {
     }
 
 
-    @Test@Ignore
+    @Test
     public void alwaysBeListenedByAnAgent() {
 
         Gossips gossips = new Gossips("Mr White", "Mr Grey", "Agent Pink","Mr Blue")
@@ -109,7 +109,7 @@ public class GossipsShould {
         assertThat(gossips.ask("Blue")).isEqualTo("");
     }
 
-    @Test@Ignore
+    @Test
     public void beStoppedByAnAgent() {
 
         Gossips gossips = new Gossips("Mr White", "Agent Pink","Mr Blue")
@@ -129,7 +129,7 @@ public class GossipsShould {
         assertThat(gossips.ask("Blue")).isEqualTo("");
     }
 
-    @Test@Ignore
+    @Test
     public void beDelayedOneTurnByAProfessor() {
 
         Gossips gossips = new Gossips("Mr White", "Pr Pink", "Mr Blue")
